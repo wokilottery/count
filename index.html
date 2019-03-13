@@ -59,11 +59,29 @@
       </form>
 
       <form style="font-weight:bold">A＝最后四个中奖号码的组合（上期号码）+四个中奖号码的组合（本期号码）</form>
-      <form style="font-weight:bold">B＝销售总数</form>
-      <form style="font-weight:bold">C＝A／B（去掉小数点取到整数）</form>
-      <form style="font-weight:bold">D＝B*C</form>
-      <form style="font-weight:bold">Jackpot头奖号码＝A-D</form>
+      <form name=FARemark>
+          Ex: <input type="text" id="ARemark" readonly="readonly" style="font-weight:bold;width:300px;color:red;background-color:antiquewhite">
+      </form>
 
+      <form style="font-weight:bold">B＝销售总数</form>
+      <form name=FBRemark>
+          Ex: <input type="text" id="BRemark" readonly="readonly" style="font-weight:bold;width:300px;color:red;background-color:antiquewhite">
+      </form>
+
+      <form style="font-weight:bold">C＝A／B（去掉小数点取到整数）</form>
+      <form name=FCRemark>
+          Ex: <input type="text" id="CRemark" readonly="readonly" style="font-weight:bold;width:300px;color:red;background-color:antiquewhite">
+      </form>
+
+      <form style="font-weight:bold">D＝B*C</form>
+      <form name=FDRemark>
+          Ex: <input type="text" id="DRemark" readonly="readonly" style="font-weight:bold;width:300px;color:red;background-color:antiquewhite">
+      </form>
+
+      <form style="font-weight:bold">Jackpot头奖号码＝A-D</form>
+      <form name=FJackpotRemark>
+          Ex: <input type="text" id="JackpotRemark" readonly="readonly" style="font-weight:bold;width:300px;color:red;background-color:antiquewhite">
+      </form>
       
 
       
@@ -319,6 +337,12 @@
                   document.FD.D.value = ''
                   document.FJackpot.Jackpot.value = ''
               }
+
+              document.FARemark.ARemark.value = PTotal + '+' + TTotal + " = " + document.FA.A.value
+              document.FBRemark.BRemark.value = BValue
+              document.FCRemark.CRemark.value = document.FA.A.value + ' / ' + BValue + " = " + document.FC.C.value
+              document.FDRemark.DRemark.value = BValue + ' * ' + document.FC.C.value + " = " + document.FD.D.value
+              document.FJackpotRemark.JackpotRemark.value = document.FA.A.value + ' - ' + document.FD.D.value + " = " + document.FJackpot.Jackpot.value
           }
 
           function keyFunction(keyID) {
