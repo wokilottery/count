@@ -3,7 +3,7 @@
   <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <meta charset=utf-8 />
-    <title>Woki獎號計算</title>
+    <title>Woki奖号计算</title>
 
 
   </head>
@@ -27,13 +27,13 @@
       </style>
 
       <form name=F1 style="font-weight:bold;font-size:30px;padding:5px;margin-top:5px;margin-bottom:5px;background-color:hotpink;width:780px;vertical-align:middle">
-          上期號碼：<input style="width:50px;font-weight:bold;font-size:30px" type="text" onblur="check_int('P1')" id="P1" maxlength="2" onkeyup="keyFunction('P1')">
+          上期号码：<input style="width:50px;font-weight:bold;font-size:30px" type="text" onblur="check_int('P1')" id="P1" maxlength="2" onkeyup="keyFunction('P1')">
                     <input style="width:50px;font-weight:bold;font-size:30px" type="text" onblur="check_int('P2')" id="P2" maxlength="2" onkeyup="keyFunction('P2')">
                     <input style="width:50px;font-weight:bold;font-size:30px"type="text" onblur="check_int('P3')" id="P3" maxlength="2"  onkeyup="keyFunction('P3')">
                     <input style="width:50px;font-weight:bold;font-size:30px"type="text" onblur="check_int('P4')" id="P4" maxlength="2"  onkeyup="keyFunction('P4')"> 請輸入獎號
       </form>
       <form name=F2 style="font-weight:bold;font-size:30px;padding:5px;margin-top:5px;margin-bottom:5px;background-color:cornflowerblue;width:780px;">
-          本期號碼：<input style="width:50px;font-weight:bold;font-size:30px" type="text" onblur="check_int('T1')" id="T1" maxlength="2" onkeyup="keyFunction('T1')">
+          本期号码：<input style="width:50px;font-weight:bold;font-size:30px" type="text" onblur="check_int('T1')" id="T1" maxlength="2" onkeyup="keyFunction('T1')">
                     <input style="width:50px;font-weight:bold;font-size:30px"type="text" onblur="check_int('T2')" id="T2" maxlength="2"  onkeyup="keyFunction('T2')">
                     <input style="width:50px;font-weight:bold;font-size:30px"type="text" onblur="check_int('T3')" id="T3" maxlength="2"  onkeyup="keyFunction('T3')">
                     <input style="width:50px;font-weight:bold;font-size:30px"type="text" onblur="check_int('T4')" id="T4" maxlength="2"  onkeyup="keyFunction('T4')"> 請輸入獎號
@@ -46,7 +46,7 @@
 
       <div id='fontA'>  B = </div>
       <input onkeyup="value=value.replace(/[^\d]/g,'')" type="text" id="B" style="width:150px;font-weight:bold;font-size:40px;color:black">
-      <button onclick="myFunction()" style="font-weight:bold;font-size:40px;">計算獎號</button>
+      <button onclick="myFunction()" style="font-weight:bold;font-size:40px;">计算奖号</button>
 
       <form name=FC style="font-weight:bold;font-size:40px;color:white;background-color:purple;width:500px;padding:5px;margin-top:5px;margin-bottom:5px"> 
           C = <input type="text" id="C" readonly="readonly"style="border-top:0;border-bottom:0;border-left:0;border-right:0;width:200px;font-weight:bold;font-size:40px;color:white;background-color:purple" tabindex="-1">
@@ -95,7 +95,7 @@
           function check_int(FormId) {
               if (FormId == "P1") {
                   if (isNaN(document.F1.P1.value)) {
-                      alert("請輸入數字");
+                      alert("请输入数字");
                       //document.F1.P1.focus();
                       document.F1.P1.value=''
                       //$('input[id="P1"]').val('');
@@ -112,7 +112,7 @@
               }
               else if (FormId == "P2") {
                   if (isNaN(document.F1.P2.value)) {
-                      alert("請輸入數字");
+                      alert("请输入数字");
                       document.F1.P2.value = ''
                   }
                   else {
@@ -125,7 +125,7 @@
               }
               else if (FormId == "P3") {
                   if (isNaN(document.F1.P3.value)) {
-                      alert("請輸入數字");
+                      alert("请输入数字");
                       document.F1.P3.value = ''
                   }
                   else {
@@ -138,7 +138,7 @@
               }
               else if (FormId == "P4") {
                   if (isNaN(document.F1.P4.value)) {
-                      alert("請輸入數字");
+                      alert("请输入数字");
                       document.F1.P4.value = ''
                   }
                   else {
@@ -151,7 +151,7 @@
 
               else if (FormId == "T1") {
                   if (isNaN(document.F2.T1.value)) {
-                      alert("請輸入數字");
+                      alert("请输入数字");
                       document.F2.T1.value = ''
                   }
                   else {
@@ -163,7 +163,7 @@
               }
               else if (FormId == "T2") {
                   if (isNaN(document.F2.T2.value)) {
-                      alert("請輸入數字");
+                      alert("请输入数字");
                       document.F2.T2.value = ''
                   }
                   else {
@@ -175,7 +175,7 @@
               }
               else if (FormId == "T3") {
                   if (isNaN(document.F2.T3.value)) {
-                      alert("請輸入數字");
+                      alert("请输入数字");
                       document.F2.T3.value = ''
                   }
                   else {
@@ -187,7 +187,7 @@
               }
               else if (FormId == "T4") {
                   if (isNaN(document.F2.T4.value)) {
-                      alert("請輸入數字");
+                      alert("请输入数字");
                       document.F2.T4.value = ''
                   }
                   else {
